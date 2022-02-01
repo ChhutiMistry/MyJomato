@@ -43,18 +43,20 @@ body{
     position: absolute;
     border-style: double;
     border-color: olive;
+    box-shadow: -22px -20px 50px olive;
 }
 
 #filtername{
     text-align: center;
     border-bottom-style: solid;
     border-bottom-width: 2px;
-    border-bottom-color: black;
+    border-bottom-color: olive;
     color: olive;
 }
 
 .filterheading{
     margin-left: 15%;
+    font-family: Gill Sans;
 }
 
 .filterdata{
