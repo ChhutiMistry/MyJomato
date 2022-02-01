@@ -1,0 +1,142 @@
+body{
+    margin: auto;
+}
+
+/*Header*/
+
+#header{
+    background-color: black;
+    height: 60px;
+}
+
+#companyname{
+    float: left;
+    font-family: Franklin Gothic Medium;
+    margin-left: 3%;
+}
+
+#hyperlink{
+    color: #bf2c33;
+    text-decoration: none;
+}
+
+#list{
+    color: rgb(104, 40, 17);
+    margin-left: 200px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#image{
+    text-align: right;
+}
+
+#icon{
+    height: 60px;
+    width: 60px;
+    margin-right: 2%;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+/*Front Display*/
+
+#front{
+    height: 500px;
+    width: 100%;
+    background-image: url("https://i.ibb.co/1dZZXzf/Background.png");
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+    position: absolute;
+}
+
+#companylogo{
+    height: 200px;
+    width: 200px;
+    background: orange;
+    margin-left: 45%;
+    margin-top: 2%;
+}
+
+#headline{
+    font-size: 40px;
+    font-family: Verdana;
+    font-weight: bold;
+    text-shadow: -6px -6px black;
+    color: rgb(254 163 28);
+    margin-left: 10%;
+}
+
+#dropdown{
+    margin-left: 30%;
+}
+
+.droprest{
+    width: 34%;
+}
+
+select{
+    height: 50px;
+    width: 22%;
+    font-size: 17px;
+    text-align: center;
+}
+
+/*Catalogue Display*/
+
+#heading{
+    font-size: 30px;
+    font-family: Impact;
+    text-align: center;
+    margin-top: 520px;
+}
+
+#catalogue{
+    height: 800px;    
+}
+
+.box{
+    border-style:inset;
+    border-width: 10px;
+    height: 360px;
+    width: 350px;
+    margin-bottom: 3%;
+    margin-left: 7%;
+    float: left;
+}
+
+.images{
+    height: 290px;
+    width: 350px;
+}
+
+.foodname{
+    font-size: 30px;
+    text-align: center;
+    margin: none;
+}
+
+/*Footer*/
+
+#footer{
+    height: 185px;
+    margin-top: 60px;
+    background-color: rgb(168, 107, 72);
+}
+
+#copy{
+    width: 100%;
+    text-align: center;
+    font-family: Gill Sans;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.vertical{
+    margin-left: 15%;
+    font-size: 20px;
+    border-left-color: black;
+    border-left-style: solid;
+    border-left-width: 3px;
+    float: left;
+}

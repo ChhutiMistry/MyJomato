@@ -1,0 +1,176 @@
+body{
+    margin: auto;
+}
+
+/*Header*/
+
+#header{
+    background-color: black;
+    height: 60px;
+}
+
+#companyname{
+    float: left;
+    font-family: Franklin Gothic Medium;
+    margin-left: 3%;
+}
+
+#hyperlink{
+    color: #bf2c33;
+    text-decoration: none;
+}
+
+#image{
+    text-align: right;
+}
+
+#icon{
+    height: 60px;
+    width: 60px;
+    margin-right: 2%;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+/*Filters*/
+
+#filter{
+    height: 520px;
+    width: 12%;
+    margin-top: 9%;
+    margin-left: 3%;
+    float: left;
+    position: absolute;
+    border-style: double;
+    border-color: olive;
+}
+
+#filtername{
+    text-align: center;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: black;
+    color: olive;
+}
+
+.filterheading{
+    margin-left: 15%;
+}
+
+.filterdata{
+    display: block;
+    margin-left: 18%;
+}
+
+/*Listing Content*/
+
+#list{
+    height: 1500px;
+    width: 80%;
+    margin-top: 3%;
+    margin-right: 2%;
+    float: right;
+    position: relative;
+}
+
+.cards{
+    height: 250px;
+    width: 550px;
+    margin-left: 3%;
+    margin-bottom: 4%;
+    border-style: ridge;
+    border-width: 5px;
+    float: left;
+    box-shadow: 22px -20px 50px olive;
+}
+
+.picture{
+    height: 250px;
+    width: 250px;
+}
+
+.name{
+    display: inline;
+    position: absolute;
+    font-size: 20px;
+    margin-left: 2%;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.star{
+    display: inline;
+    position: absolute;
+    font-size: 20px;
+    margin-top: 4.8%;
+    margin-left: 3%;
+    color: rgb(224, 64, 6);
+}
+
+.review{
+    display: inline;
+    position: absolute;
+    font-size: 17px;
+    margin-top: 7.8%;
+    margin-left: 4%;
+    color: rgb(194, 89, 28);
+    font-weight: bolder;
+}
+
+.oldprice{
+    display: inline;
+    position: absolute;
+    font-size: 22px;
+    margin-top: 14%;
+    margin-left: 2.5%;
+}
+
+.oldcost{
+    display: inline;
+    position: absolute;
+    font-size: 24px;
+    margin-top: 14%;
+    margin-left: 15%;
+    text-decoration: line-through;
+}
+
+.newprice{
+    display: inline;
+    position: absolute;
+    font-size: 22px;
+    margin-top: 17%;
+    margin-left: 2.5%;
+}
+
+.newcost{
+    display: inline;
+    position: absolute;
+    font-size: 24px;
+    margin-top: 17%;
+    margin-left: 15%;
+}
+
+/*Footer*/
+
+#footer{
+    height: 185px;
+    margin-top: 104%;
+    background-color: rgb(168, 107, 72);
+}
+
+.vertical{
+    margin-left: 15%;
+    font-size: 20px;
+    border-left-color: black;
+    border-left-style: solid;
+    border-left-width: 3px;
+    float: left;
+}
+
+#copyright{
+    width: 100%;
+    text-align: center;
+    font-family: Gill Sans;
+    font-size: 25px;
+    display: inline-block;
+}
