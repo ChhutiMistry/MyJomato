@@ -20,14 +20,7 @@ body{
     text-decoration: none;
 }
 
-#list{
-    color: rgb(104, 40, 17);
-    margin-left: 200px;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-#image{
+#logoimage{
     text-align: right;
 }
 
@@ -89,6 +82,11 @@ select{
     font-family: Impact;
     text-align: center;
     margin-top: 520px;
+}
+
+#list{
+    color: black;
+    text-decoration: none;
 }
 
 #catalogue{

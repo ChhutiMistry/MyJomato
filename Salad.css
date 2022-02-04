@@ -1,0 +1,189 @@
+body{
+    margin: auto;
+}
+
+#header{
+    background-color: black;
+    height: 60px;
+}
+
+#companyname{
+    float: left;
+    font-family: Franklin Gothic Medium;
+    margin-left: 3%;
+}
+
+#hyperlink{
+    color: #bf2c33;
+    text-decoration: none;
+}
+
+#logoimage{
+    text-align: right;
+}
+
+#icon{
+    height: 60px;
+    width: 60px;
+    margin-right: 2%;
+    border-radius: 50%;
+    background-color: orange;
+}
+
+#picture{
+    border-style: inset;
+    border-color: orange;
+    border-width: 10px;
+    float: left;
+    position: absolute;
+    margin-top: 3.5%;
+    margin-left: 8%;
+    height: 400px;
+    width: 400px;
+}
+
+#image{
+    height: 400px;
+    width: 400px;
+}
+
+#data{
+    float: right;
+    margin-top: 2.5%;
+    margin-right: 3%;
+    height: 400px;
+    width: 900px;
+}
+
+#name{
+    margin-left: 3%;
+}
+
+.star{
+    display: inline;
+    position: absolute;
+    font-size: 20px;
+    margin-top: 0%;
+    margin-left: 4%;
+    color: rgb(224, 64, 6);
+}
+
+.review{
+    display: inline;
+    position: absolute;
+    font-size: 17px;
+    margin-top: 3%;
+    margin-left: 4%;
+    color: rgb(194, 89, 28);
+    font-weight: bolder;
+}
+
+.oldprice{
+    display: inline;
+    position: absolute;
+    font-size: 22px;
+    margin-top: 7%;
+    margin-left: 3%;
+}
+
+.oldcost{
+    display: inline;
+    position: absolute;
+    font-size: 24px;
+    margin-top: 7%;
+    margin-left: 13%;
+    text-decoration: line-through;
+}
+
+.newprice{
+    display: inline;
+    position: absolute;
+    font-size: 22px;
+    margin-top: 10%;
+    margin-left: 3%;
+}
+
+.newcost{
+    display: inline;
+    position: absolute;
+    font-size: 24px;
+    margin-top: 10%;
+    margin-left: 13%;
+}
+
+#termlogo1{
+    height: 100px;
+    width: 100px;
+    margin-top: 10%;
+    margin-left: 40%;
+    border: black;
+    border-style: groove;
+}
+
+#termlogo2{
+    height: 100px;
+    width: 200px;
+    margin-top: 10%;
+    margin-left: 5%;
+    border: black;
+    border-style: groove;
+}
+
+#available{
+    font-size: 30px;
+    position: absolute;
+    color: green;
+    font-weight: bolder;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+
+#button{
+    position: relative;
+}
+
+#button1{
+    height: 50px;
+    width: 100px;
+    margin-top: 8%;
+    margin-left: 6%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    display: inline;
+    box-shadow: 2px -2px 35px inset;
+}
+
+#button2{
+    height: 50px;
+    width: 120px;
+    margin-left: 4%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    display: inline;
+    box-shadow: -2px 2px 35px inset;
+}
+
+#footer{
+    height: 185px;
+    margin-top: 546px;
+    background-color: rgb(168, 107, 72);
+}
+
+#copy{
+    width: 100%;
+    text-align: center;
+    font-family: Gill Sans;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.vertical{
+    margin-left: 15%;
+    font-size: 20px;
+    border-left-color: black;
+    border-left-style: solid;
+    border-left-width: 3px;
+    float: left;
+}
