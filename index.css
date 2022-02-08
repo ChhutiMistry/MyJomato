@@ -28,7 +28,6 @@ body{
     height: 60px;
     width: 60px;
     margin-right: 2%;
-    border-radius: 50%;
     background-color: orange;
 }
 
@@ -39,7 +38,7 @@ body{
     width: 100%;
     background-image: url("https://i.ibb.co/1dZZXzf/Background.png");
     background-repeat: no-repeat;
-    background-size: 100% 500px;
+    background-size: 100% 100%;
     position: absolute;
 }
 
@@ -47,8 +46,19 @@ body{
     height: 200px;
     width: 200px;
     background: orange;
-    margin-left: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 2%;
+    animation: revolve 1s;
+}
+
+@keyframes revolve {
+    0% {transform: rotate(30deg)}
+    25% {transform: rotate(90deg)}
+    50% {transform: rotate(180deg)}
+    75% {transform: rotate(270deg)}
+    100% {transform: scale(2.1)}
 }
 
 #headline{
@@ -57,22 +67,30 @@ body{
     font-weight: bold;
     text-shadow: -6px -6px black;
     color: rgb(254 163 28);
-    margin-left: 10%;
+    text-align: center;
+    animation: magnify 1s;
+}
+
+@keyframes magnify {
+    100% {transform: scale(1.5)}
+}
+
+.droptext{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 #dropdown{
-    margin-left: 30%;
-}
-
-.droprest{
-    width: 34%;
-}
-
-select{
-    height: 50px;
-    width: 22%;
-    font-size: 17px;
     text-align: center;
+}
+
+#dropcity{
+    display: inline;
+}
+
+#droprest{
+    display: inline;
 }
 
 /*Catalogue Display*/
@@ -81,7 +99,7 @@ select{
     font-size: 30px;
     font-family: Impact;
     text-align: center;
-    margin-top: 520px;
+    margin-top: 12%;
 }
 
 #list{
@@ -89,18 +107,22 @@ select{
     text-decoration: none;
 }
 
-#catalogue{
-    height: 800px;    
-}
-
 .box{
     border-style:inset;
     border-width: 10px;
-    height: 360px;
-    width: 350px;
-    margin-bottom: 3%;
-    margin-left: 7%;
-    float: left;
+    height: 356px;
+    width: 370px;
+    margin: auto;
+    margin-top: 5%;
+    animation: swing 1.5s;
+}
+
+@keyframes swing {
+    0% {transform: rotate(10deg)}
+    25% {transform: rotate(5deg)}
+    50% {transform: rotate(0deg)}
+    75% {transform: rotate(-5deg)}
+    100% {transform: rotate(-10deg)}
 }
 
 .images{
@@ -111,15 +133,24 @@ select{
 .foodname{
     font-size: 30px;
     text-align: center;
-    margin: none;
 }
 
 /*Footer*/
 
 #footer{
-    height: 185px;
-    margin-top: 60px;
-    background-color: rgb(168, 107, 72);
+    margin-top: 3%;
+    color: orange;
+    background-color: black;
+}
+
+.vertical{
+    margin-top: 2%;
+    margin-left: 15%;
+    font-size: 20px;
+    border-left-color: rgb(254 163 28);
+    border-left-style: solid;
+    border-left-width: 3px;
+    text-align: left;
 }
 
 #copy{
@@ -128,13 +159,4 @@ select{
     font-family: Gill Sans;
     font-size: 25px;
     display: inline-block;
-}
-
-.vertical{
-    margin-left: 15%;
-    font-size: 20px;
-    border-left-color: black;
-    border-left-style: solid;
-    border-left-width: 3px;
-    float: left;
 }

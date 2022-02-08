@@ -44,6 +44,11 @@ body{
     border-style: double;
     border-color: olive;
     box-shadow: -22px -20px 50px olive;
+    animation: magnify 1s;
+}
+
+@keyframes magnify {
+    100% {transform: scale(0.9)}
 }
 
 #filtername{
@@ -89,6 +94,15 @@ body{
     border-width: 5px;
     float: left;
     box-shadow: 22px -20px 50px olive;
+    animation: swing 1.5s;
+}
+
+@keyframes swing {
+    0% {transform: rotate(10deg)}
+    25% {transform: rotate(5deg)}
+    50% {transform: rotate(0deg)}
+    75% {transform: rotate(-5deg)}
+    100% {transform: rotate(-10deg)}
 }
 
 .picture{
