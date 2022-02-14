@@ -1,55 +1,43 @@
-body{
-    margin: auto;
-}
-
 /*Header*/
 
 #header{
-    background-color: black;
-    height: 60px;
-}
-
-#companyname{
-    float: left;
-    font-family: Franklin Gothic Medium;
-    margin-left: 3%;
-}
-
-#hyperlink{
-    color: #bf2c33;
-    text-decoration: none;
-}
-
-#logoimage{
-    text-align: right;
+    height: 62px;
 }
 
 #icon{
-    height: 60px;
-    width: 60px;
-    margin-right: 2%;
+    height: 50px;
+    width: 50px;
     background-color: orange;
+}
+
+.navv{
+    font-size: 40px;
+    margin-left: 8%;
+    font-weight: bold;
+    color: #bf2c33 !important;
+}
+
+.navvv{
+    font-size: 25px;
+    color: orange !important;
+    border-left-color: orange;
+    border-left-style: solid;
+    border-left-width: 3px;
 }
 
 /*Front Display*/
 
 #front{
-    height: 500px;
-    width: 100%;
+    height: 550px;
     background-image: url("https://i.ibb.co/1dZZXzf/Background.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    position: absolute;
 }
 
-#companylogo{
+#logo{
     height: 200px;
     width: 200px;
-    background: orange;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
+    background-color: orange;
     animation: revolve 1s;
 }
 
@@ -66,8 +54,9 @@ body{
     font-family: Verdana;
     font-weight: bold;
     text-shadow: -6px -6px black;
-    color: rgb(254 163 28);
+    color: orange;
     text-align: center;
+    margin-top: 2%;
     animation: magnify 1s;
 }
 
@@ -75,14 +64,16 @@ body{
     100% {transform: scale(1.5)}
 }
 
-.droptext{
-    color: black;
-    font-size: 20px;
+#drop{
+    font-size: 30px;
     font-weight: bold;
+    margin-top: 3%;
+    text-align: center;
 }
 
-#dropdown{
-    text-align: center;
+.droptextt{
+    font-size: 20px;
+    text-decoration: none;
 }
 
 #dropcity{
@@ -93,13 +84,13 @@ body{
     display: inline;
 }
 
-/*Catalogue Display*/
+/*Catalogue*/
 
-#heading{
+#catalogue{
     font-size: 30px;
     font-family: Impact;
     text-align: center;
-    margin-top: 12%;
+    margin-top: 1%;
 }
 
 #list{
@@ -114,6 +105,7 @@ body{
     width: 370px;
     margin: auto;
     margin-top: 5%;
+    margin-bottom: 10%;
     animation: swing 1.5s;
 }
 
@@ -131,25 +123,23 @@ body{
 }
 
 .foodname{
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
+    font-family: Times New Roman;
+    font-weight: bold;
 }
 
 /*Footer*/
 
 #footer{
-    margin-top: 3%;
     color: orange;
     background-color: black;
 }
 
 .vertical{
     margin-top: 2%;
-    margin-left: 15%;
+    margin-left: 20%;
     font-size: 20px;
-    border-left-color: rgb(254 163 28);
-    border-left-style: solid;
-    border-left-width: 3px;
     text-align: left;
 }
 
@@ -158,5 +148,4 @@ body{
     text-align: center;
     font-family: Gill Sans;
     font-size: 25px;
-    display: inline-block;
 }

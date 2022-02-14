@@ -5,19 +5,24 @@
             Listing Page
         </title>
         <link href="https://i.ibb.co/3SfhyK5/Alphabet-J.png" rel="icon"/>
-        <link href="listing.css" rel="stylesheet" type="text/css"/>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="https://kit.fontawesome.com/97f33a6782.js" crossorigin="anonymous"></script>
+        <link href="listing.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
         <header>
-            <div id="header">
-                <!--Company Name-->
-                <h1 id="companyname">
-                    <a href="index.html" id="hyperlink">JOMATO</a>
-                </h1>
-                <!--Company Logo-->
-                <div id="logoimage">
-                    <img src="https://i.ibb.co/3SfhyK5/Alphabet-J.png" alt="Icon" id="icon"/>
+            <div class="container-fluid">
+                <div id="header">
+                    <!--Company Name-->
+                    <h1 id="companyname">
+                        <a href="index.html" id="hyperlink">JOMATO</a>
+                    </h1>
+                    <!--Company Logo-->
+                    <div id="logoimage">
+                        <img src="https://i.ibb.co/3SfhyK5/Alphabet-J.png" alt="Icon" id="icon" class="img-circle"/>
+                    </div>
                 </div>
             </div>
         </header>
@@ -390,47 +395,59 @@
         </div>
         <!--Footer-->
         <footer>
-            <div id="footer">
-                <ul class="vertical">
-                    <li>
-                        Blog
-                    </li>
-                    <li>
-                        Contact Us
-                    </li>
-                    <li>
-                        About me
-                    </li>
-                </ul>
-                <ul class="vertical">
-                    <li>
-                        Code of Conduct
-                    </li>
-                    <li>
-                        Community
-                    </li>
-                    <li>
-                        Mobile Apps
-                    </li>
-                </ul>
-                <ul class="vertical">
-                    <li>
-                        Privacy
-                    </li>
-                    <li>
-                        Terms and Conditions
-                    </li>
-                    <li>
-                        Security
-                    </li>
-                    <li>
-                        Sitemap
-                    </li>
-                </ul>
-                <!--Copyright symbol-->
-                <p id="copyright">
-                    &COPY; 2022
-                </p>
+            <div class="container-fluid">
+                <div id="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                <ul class="vertical">
+                                    <li>
+                                        Blog
+                                    </li>
+                                    <li>
+                                        Contact Us
+                                    </li>
+                                    <li>
+                                        About me
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                <ul class="vertical">
+                                    <li>
+                                        Code of Conduct
+                                    </li>
+                                    <li>
+                                        Community
+                                    </li>
+                                    <li>
+                                        Mobile Apps
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                <ul class="vertical">
+                                    <li>
+                                        Privacy
+                                    </li>
+                                    <li>
+                                        Terms and Conditions
+                                    </li>
+                                    <li>
+                                        Security
+                                    </li>
+                                    <li>
+                                        Sitemap
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Copyright symbol-->
+                    <p id="copy">
+                        &COPY; 2022
+                    </p>
+                </div>
             </div>
         </footer>
     </body>

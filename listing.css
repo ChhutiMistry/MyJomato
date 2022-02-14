@@ -39,12 +39,11 @@ body{
     width: 12%;
     margin-top: 9%;
     margin-left: 3%;
-    float: left;
     position: absolute;
     border-style: double;
     border-color: olive;
     box-shadow: -22px -20px 50px olive;
-    animation: magnify 1s;
+    /*animation: magnify 1s;*/
 }
 
 @keyframes magnify {
@@ -65,7 +64,6 @@ body{
 }
 
 .filterdata{
-    display: block;
     margin-left: 18%;
 }
 
@@ -86,7 +84,7 @@ body{
 }
 
 .cards{
-    height: 250px;
+    height: 260px;
     width: 550px;
     margin-left: 3%;
     margin-bottom: 4%;
@@ -94,7 +92,7 @@ body{
     border-width: 5px;
     float: left;
     box-shadow: 22px -20px 50px olive;
-    animation: swing 1.5s;
+    /*animation: swing 1.5s;*/
 }
 
 @keyframes swing {
@@ -111,7 +109,7 @@ body{
 }
 
 .name{
-    display: inline;
+    display: inline-block;
     position: absolute;
     font-size: 20px;
     margin-left: 2.5%;
@@ -121,7 +119,7 @@ body{
 }
 
 .star{
-    display: inline;
+    display: inline-block;
     position: absolute;
     font-size: 20px;
     margin-top: 4.8%;
@@ -130,7 +128,7 @@ body{
 }
 
 .review{
-    display: inline;
+    display: inline-block;
     position: absolute;
     font-size: 17px;
     margin-top: 7.8%;
@@ -140,7 +138,7 @@ body{
 }
 
 .oldprice{
-    display: inline;
+    display: inline-block;
     position: absolute;
     font-size: 22px;
     margin-top: 14%;
@@ -149,7 +147,7 @@ body{
 }
 
 .oldcost{
-    display: inline;
+    display: inline-block;
     position: absolute;
     font-size: 24px;
     margin-top: 14%;
@@ -159,7 +157,7 @@ body{
 }
 
 .newprice{
-    display: inline;
+    display: inline-block;
     position: absolute;
     font-size: 22px;
     margin-top: 17%;
@@ -168,7 +166,7 @@ body{
 }
 
 .newcost{
-    display: inline;
+    display: inline-block;
     position: absolute;
     font-size: 24px;
     margin-top: 17%;
@@ -179,21 +177,23 @@ body{
 /*Footer*/
 
 #footer{
-    height: 185px;
-    margin-top: 104%;
-    background-color: rgb(168, 107, 72);
+    margin-top: 3%;
+    color: orange;
+    background-color: black;
+    margin-top: 120%;
 }
 
 .vertical{
+    margin-top: 2%;
     margin-left: 15%;
     font-size: 20px;
-    border-left-color: black;
+    border-left-color: rgb(254 163 28);
     border-left-style: solid;
     border-left-width: 3px;
-    float: left;
+    text-align: left;
 }
 
-#copyright{
+#copy{
     width: 100%;
     text-align: center;
     font-family: Gill Sans;
