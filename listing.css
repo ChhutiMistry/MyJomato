@@ -1,53 +1,44 @@
-body{
-    margin: auto;
-}
-
-/*Header*/
-
 #header{
-    background-color: black;
-    height: 60px;
-}
-
-#companyname{
-    float: left;
-    font-family: Franklin Gothic Medium;
-    margin-left: 3%;
-}
-
-#hyperlink{
-    color: #bf2c33;
-    text-decoration: none;
-}
-
-#logoimage{
-    text-align: right;
+    height: 62px;
 }
 
 #icon{
-    height: 60px;
-    width: 60px;
-    margin-right: 2%;
-    border-radius: 50%;
+    height: 50px;
+    width: 50px;
     background-color: orange;
 }
 
-/*Filters*/
+.navv{
+    font-size: 40px;
+    margin-left: 8%;
+    font-weight: bold;
+    color: #bf2c33 !important;
+}
+
+.navvv{
+    font-size: 25px;
+    color: orange !important;
+    border-left-color: orange;
+    border-left-style: solid;
+    border-left-width: 3px;
+}
 
 #filter{
-    height: 520px;
-    width: 12%;
-    margin-top: 9%;
-    margin-left: 3%;
-    position: absolute;
+    height: 600px;
+    width: 240px;
+    margin-top: 30%;
+    margin-left: 15%;
     border-style: double;
     border-color: olive;
-    box-shadow: -22px -20px 50px olive;
-    /*animation: magnify 1s;*/
+    box-shadow: -50px -50px 50px olive;
+    animation: magnify 1.5s;
 }
 
 @keyframes magnify {
-    100% {transform: scale(0.9)}
+    0% {transform: rotate(-10deg)}
+    25% {transform: rotate(0deg)}
+    75% {transform: rotate(10deg)}
+    100% {transform: scale(1.5)}
 }
 
 #filtername{
@@ -59,137 +50,94 @@ body{
 }
 
 .filterheading{
+    margin-top: 7%;
     margin-left: 15%;
+    color: rgb(43, 43, 1);
     font-family: Gill Sans;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 .filterdata{
-    margin-left: 18%;
+    margin-left: 24%;
+    font-size: 18px;
 }
 
-/*Listing Content*/
-
-#list{
-    height: 1500px;
-    width: 80%;
-    margin-top: 3%;
-    margin-right: 2%;
-    float: right;
-    position: relative;
-}
-
-.boxlink{
-    text-decoration: none;
-    color: #e3e3e3;
-}
-
-.cards{
-    height: 260px;
-    width: 550px;
-    margin-left: 3%;
-    margin-bottom: 4%;
+.mibox{
+    height: 300px;
+    width: 600px;
     border-style: ridge;
+    border-color: olive;
     border-width: 5px;
-    float: left;
-    box-shadow: 22px -20px 50px olive;
-    /*animation: swing 1.5s;*/
+    margin-top: 8%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    box-shadow: 65px -40px 50px olive;
+    animation: swing 1.5s;
 }
 
 @keyframes swing {
     0% {transform: rotate(10deg)}
-    25% {transform: rotate(5deg)}
-    50% {transform: rotate(0deg)}
-    75% {transform: rotate(-5deg)}
-    100% {transform: rotate(-10deg)}
+    25% {transform: rotate(0deg)}
+    75% {transform: rotate(-10deg)}
+    100% {transform: scale(1.5)}
 }
 
-.picture{
-    height: 250px;
-    width: 250px;
+.miimage{
+    height: 290px;
 }
 
 .name{
-    display: inline-block;
-    position: absolute;
-    font-size: 20px;
-    margin-left: 2.5%;
-    font-family: Arial;
     font-weight: bold;
-    color: black;
+    font-size: 30px;
+    margin-top: 2%;
 }
 
 .star{
-    display: inline-block;
-    position: absolute;
-    font-size: 20px;
-    margin-top: 4.8%;
-    margin-left: 2.5%;
-    color: rgb(224, 64, 6);
+    color: orange;
+    font-size: 15px;
+    margin-left: 5%;
 }
 
 .review{
-    display: inline-block;
-    position: absolute;
-    font-size: 17px;
-    margin-top: 7.8%;
-    margin-left: 2.5%;
-    color: rgb(194, 89, 28);
-    font-weight: bolder;
+    color: orangered;
+    font-size: 15px;
+    margin-left: 5%;
 }
 
 .oldprice{
-    display: inline-block;
-    position: absolute;
-    font-size: 22px;
-    margin-top: 14%;
-    margin-left: 2.5%;
-    color: black;
+    font-size: 20px;
 }
 
 .oldcost{
-    display: inline-block;
-    position: absolute;
-    font-size: 24px;
-    margin-top: 14%;
-    margin-left: 15%;
     text-decoration: line-through;
-    color: black;
+    font-size: 22px;
 }
 
 .newprice{
-    display: inline-block;
-    position: absolute;
-    font-size: 22px;
-    margin-top: 17%;
-    margin-left: 2.5%;
-    color: black;
+    font-size: 20px;
 }
 
 .newcost{
-    display: inline-block;
-    position: absolute;
-    font-size: 24px;
-    margin-top: 17%;
-    margin-left: 15%;
-    color: black;
+    font-size: 22px;
 }
 
-/*Footer*/
+.mibuton{
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 60%;
+}
 
 #footer{
-    margin-top: 3%;
     color: orange;
     background-color: black;
-    margin-top: 120%;
 }
 
 .vertical{
     margin-top: 2%;
-    margin-left: 15%;
+    margin-left: 20%;
     font-size: 20px;
-    border-left-color: rgb(254 163 28);
-    border-left-style: solid;
-    border-left-width: 3px;
     text-align: left;
 }
 
@@ -198,5 +146,4 @@ body{
     text-align: center;
     font-family: Gill Sans;
     font-size: 25px;
-    display: inline-block;
 }

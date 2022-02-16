@@ -2,453 +2,592 @@
 <html>
     <head>
         <title>
-            Listing Page
+            Jomato
         </title>
         <link href="https://i.ibb.co/3SfhyK5/Alphabet-J.png" rel="icon"/>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/97f33a6782.js" crossorigin="anonymous"></script>
         <link href="listing.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <header>
-            <div class="container-fluid">
-                <div id="header">
-                    <!--Company Name-->
-                    <h1 id="companyname">
-                        <a href="index.html" id="hyperlink">JOMATO</a>
-                    </h1>
-                    <!--Company Logo-->
-                    <div id="logoimage">
-                        <img src="https://i.ibb.co/3SfhyK5/Alphabet-J.png" alt="Icon" id="icon" class="img-circle"/>
+        <header id="header">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <div class="container-fluid">
+                    <div class="navbar-brand">
+                        <ul class="nav navbar-nav">
+                            <!--Company Logo-->
+                            <li class="nav-item">
+                                <img src="https://i.ibb.co/3SfhyK5/Alphabet-J.png" alt="Icon" id="icon" class="rounded-pill"/>
+                            </li>
+                            <!--Company Name-->
+                            <li class="nav-item">
+                                <a class="nav-link navv" href="index.html">JOMATO</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Navigation Bar-->
+                    <div class="navbar-brand navbar-collapse justify-content-end">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link navvv" href="listing.html">Catalogue</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navvv">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link navvv">About Me</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+            </nav>
         </header>
-        <!--Filters-->
-        <div id="filter">
-            <h2 id="filtername">
-                FILTER
-            </h2>
-            <h3 class="filterheading">
-                Cuisine:
-            </h3>
-            <div class="filterdata">
-                <input type="radio"/>Breakfast
-            </div>
-            <div class="filterdata">
-                <input type="radio"/>Lunch
-            </div>
-            <div class="filterdata">
-                <input type="radio"/>Dinner
-            </div>
-            <h3 class="filterheading">
-                Dish type:
-            </h3>
-            <div class="filterdata">
-                <input type="checkbox"/>North Indian
-            </div>
-            <div class="filterdata">
-                <input type="checkbox"/>South Indian
-            </div>
-            <div class="filterdata">
-                <input type="checkbox"/>Chinese
-            </div>
-            <div class="filterdata">
-                <input type="checkbox"/>Fast Food
-            </div>
-            <div class="filterdata">
-                <input type="checkbox"/>Street Food
-            </div>
-            <h3 class="filterheading">
-                Cost:
-            </h3>
-            <div class="filterdata">
-                <input type="checkbox"/>Less than ₹100
-            </div>
-            <div class="filterdata">
-                <input type="checkbox"/>₹100 to ₹200
-            </div>
-            <div class="filterdata">
-                <input type="checkbox"/>₹200 to ₹300
-            </div>
-            <div class="filterdata">
-                <input type="checkbox"/>₹300 to ₹400
-            </div>
-            <div class="filterdata">
-                <input type="checkbox"/>₹400 +
-            </div>
-        </div>
-        <!--Listing Content-->
-        <div id="list">
-            <a href="Oats.html" class="boxlink">
-                <div class="cards">
-                    <!--Dish number 1-->
-                    <img src="https://i.ibb.co/GRTTfsz/Oat-Waffle.jpg" alt="Oats" class="picture"/>
-                    <p class="name">
-                        Blueberry Oat Waffles
-                    </p>
-                    <p class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </p>
-                    <p class="review">
-                        532 Customer Reviews
-                    </p>
-                    <p class="oldprice">
-                        Old price:
-                    </p>
-                    <p class="oldcost">
-                        ₹ 258
-                    </p>
-                    <p class="newprice">
-                        Current price:
-                    </p>
-                    <p class="newcost">
-                        ₹ 199
-                    </p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md- col-sm- col-4">
+                    <div id="filter">
+                        <h2 id="filtername">
+                            FILTER
+                        </h2>
+                        <h3 class="filterheading">
+                            Cuisine:
+                        </h3>
+                        <label class="filterdata">
+                            <input type="radio" value="breakfast" name="time"/>Breakfast
+                        </label>
+                        <label class="filterdata">
+                            <input type="radio" value="lunch" name="time"/>Lunch
+                        </label>
+                        <label class="filterdata">
+                            <input type="radio" value="dinner" name="time"/>Dinner
+                        </label>
+                        <h3 class="filterheading">
+                            Dish type:
+                        </h3>
+                        <label class="filterdata">
+                            <input type="checkbox" value="northindian" name="place1"/>North Indian
+                        </label>
+                        <label class="filterdata">
+                            <input type="checkbox" value="southindian" name="place2"/>South Indian
+                        </label>
+                        <label class="filterdata">
+                            <input type="checkbox" value="chinese" name="place3"/>Chinese
+                        </label>
+                        <label class="filterdata">
+                            <input type="checkbox" value="fastfood" name="place4"/>Fast Food
+                        </label>
+                        <label class="filterdata">
+                            <input type="checkbox" value="streetfood" name="place5"/>Street Food
+                        </label>
+                        <h3 class="filterheading">
+                            Cost:
+                        </h3>
+                        <label class="filterdata">
+                            <input type="checkbox" value="100" name="money1"/>Less than ₹100
+                        </label>
+                        <label class="filterdata">
+                            <input type="checkbox" value="200" name="money2"/>₹100 to ₹200
+                        </label>
+                        <label class="filterdata">
+                            <input type="checkbox" value="300" name="money3"/>₹200 to ₹300
+                        </label>
+                        <label class="filterdata">
+                            <input type="checkbox" value="400" name="money4"/>₹300 to ₹400
+                        </label>
+                        <label class="filterdata">
+                            <input type="checkbox" value="500" name="money5"/>₹400 +
+                        </label>
+                    </div>
                 </div>
-            </a>
-            <a href="Toast.html" class="boxlink">
-                <div class="cards">
-                    <!--Dish number 2-->
-                    <img src="https://i.ibb.co/rc9Rx0k/Toast-Wraps.jpg" alt="Toast" class="picture"/>
-                    <p class="name">
-                        Fruit-filled French Toast
-                    </p>
-                    <p class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </p>
-                    <p class="review">
-                        541 Customer Reviews
-                    </p>
-                    <p class="oldprice">
-                        Old price:
-                    </p>
-                    <p class="oldcost">
-                        ₹ 338
-                    </p>
-                    <p class="newprice">
-                        Current price:
-                    </p>
-                    <p class="newcost">
-                        ₹ 249
-                    </p>
-                </div>
-            </a>
-            <a href="Salad.html" class="boxlink">
-                <div class="cards">
-                    <!--Dish number 3-->
-                    <img src="https://i.ibb.co/Bf19k83/Salad.jpg" alt="Salad" class="picture"/>
-                    <p class="name">
-                        Steak and Fries Salad
-                    </p>
-                    <p class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </p>
-                    <p class="review">
-                        521 Customer Reviews
-                    </p>
-                    <p class="oldprice">
-                        Old price:
-                    </p>
-                    <p class="oldcost">
-                        ₹ 462
-                    </p>
-                    <p class="newprice">
-                        Current price:
-                    </p>
-                    <p class="newcost">
-                        ₹ 399
-                    </p>
-                </div>
-            </a>
-            <a href="Sandwich.html" class="boxlink">
-                <div class="cards">
-                    <!--Dish number 4-->
-                    <img src="https://i.ibb.co/q9CYcHW/Sandwich.jpg" alt="Sandwich" class="picture"/>
-                    <p class="name">
-                        Grilled Eggplant Sandwich
-                    </p>
-                    <p class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </p>
-                    <p class="review">
-                        539 Customer Reviews
-                    </p>
-                    <p class="oldprice">
-                        Old price:
-                    </p>
-                    <p class="oldcost">
-                        ₹ 345
-                    </p>
-                    <p class="newprice">
-                        Current price:
-                    </p>
-                    <p class="newcost">
-                        ₹ 299
-                    </p>
-                </div>
-            </a>
-            <a href="Chicken.html" class="boxlink">
-                <div class="cards">
-                    <!--Dish number 5-->
-                    <img src="https://i.ibb.co/Gv0SgdB/BBQ-Chicken.jpg" alt="Chicken" class="picture"/>
-                    <p class="name">
-                        Tropical BBQ Chicken
-                    </p>
-                    <p class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                    </p>
-                    <p class="review">
-                        530 Customer Reviews
-                    </p>
-                    <p class="oldprice">
-                        Old price:
-                    </p>
-                    <p class="oldcost">
-                        ₹ 512
-                    </p>
-                    <p class="newprice">
-                        Current price:
-                    </p>
-                    <p class="newcost">
-                        ₹ 449
-                    </p>
-                </div>
-            </a>
-            <a href="Fish.html" class="boxlink">
-                <div class="cards">
-                    <!--Dish number 6-->
-                    <img src="https://i.ibb.co/LpLsgmY/Fish.jpg" alt="Fish" class="picture"/>
-                    <p class="name">
-                        Southwestern Fish Tacos
-                    </p>
-                    <p class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </p>
-                    <p class="review">
-                        523 Customer Reviews
-                    </p>
-                    <p class="oldprice">
-                        Old price:
-                    </p>
-                    <p class="oldcost">
-                        ₹ 278
-                    </p>
-                    <p class="newprice">
-                        Current price:
-                    </p>
-                    <p class="newcost">
-                        ₹ 235
-                    </p>
-                </div>
-            </a>
-            <a href="Watermelon.html" class="boxlink">
-                <div class="cards">
-                    <!--Dish number 7-->
-                    <img src="https://i.ibb.co/zFPfHBv/Watermelon-Drink.jpg" alt="Watermelon drink" class="picture"/>
-                    <p class="name">
-                        Watermelon Agua Fresca
-                    </p>
-                    <p class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </p>
-                    <p class="review">
-                        514 Customer Reviews
-                    </p>
-                    <p class="oldprice">
-                        Old price:
-                    </p>
-                    <p class="oldcost">
-                        ₹ 120
-                    </p>
-                    <p class="newprice">
-                        Current price:
-                    </p>
-                    <p class="newcost">
-                        ₹ 89
-                    </p>
-                </div>
-            </a>
-            <a href="Pomegranate.html" class="boxlink">
-                <div class="cards">
-                    <!--Dish number 8-->
-                    <img src="https://i.ibb.co/JzM2mFm/Pomegranate-Drink.jpg" alt="Pomegranate drink" class="picture"/>
-                    <p class="name">
-                        Pomegranate Pimms
-                    </p>
-                    <p class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </p>
-                    <p class="review">
-                        523 Customer Reviews
-                    </p>
-                    <p class="oldprice">
-                        Old price:
-                    </p>
-                    <p class="oldcost">
-                        ₹ 115
-                    </p>
-                    <p class="newprice">
-                        Current price:
-                    </p>
-                    <p class="newcost">
-                        ₹ 68
-                    </p>
-                </div>
-            </a>
-            <a href="Samosa.html" class="boxlink">
-                <div class="cards">
-                    <!--Dish number 9-->
-                    <img src="https://i.ibb.co/3vdg3Pm/Samosa.png" alt="Samosa" class="picture"/>
-                    <p class="name">
-                        Mushroom Samosa
-                    </p>
-                    <p class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </p>
-                    <p class="review">
-                        541 Customer Reviews
-                    </p>
-                    <p class="oldprice">
-                        Old price:
-                    </p>
-                    <p class="oldcost">
-                        ₹ 65
-                    </p>
-                    <p class="newprice">
-                        Current price:
-                    </p>
-                    <p class="newcost">
-                        ₹ 18
-                    </p>
-                </div>
-            </a>
-            <a href="Tikka.html" class="boxlink">
-                <div class="cards">
-                    <!--Dish number 10-->
-                    <img src="https://i.ibb.co/7jNVg6V/Tikka.png" alt="Tikka" class="picture"/>
-                    <p class="name">
-                        Paneer Tikka Kali Mirch
-                    </p>
-                    <p class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                    </p>
-                    <p class="review">
-                        533 Customer Reviews
-                    </p>
-                    <p class="oldprice">
-                        Old price:
-                    </p>
-                    <p class="oldcost">
-                        ₹ 250
-                    </p>
-                    <p class="newprice">
-                        Current price:
-                    </p>
-                    <p class="newcost">
-                        ₹ 199
-                    </p>
-                </div>
-            </a>
-        </div>
-        <!--Footer-->
-        <footer>
-            <div class="container-fluid">
-                <div id="footer">
-                    <div class="container-fluid">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-8">
+                    <div class="mibox">
                         <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <ul class="vertical">
-                                    <li>
-                                        Blog
-                                    </li>
-                                    <li>
-                                        Contact Us
-                                    </li>
-                                    <li>
-                                        About me
-                                    </li>
-                                </ul>
+                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                <img src="https://i.ibb.co/GRTTfsz/Oat-Waffle.jpg" alt="Oats" class="img-responsive miimage"/>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <ul class="vertical">
-                                    <li>
-                                        Code of Conduct
-                                    </li>
-                                    <li>
-                                        Community
-                                    </li>
-                                    <li>
-                                        Mobile Apps
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                                <ul class="vertical">
-                                    <li>
-                                        Privacy
-                                    </li>
-                                    <li>
-                                        Terms and Conditions
-                                    </li>
-                                    <li>
-                                        Security
-                                    </li>
-                                    <li>
-                                        Sitemap
-                                    </li>
-                                </ul>
+                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
+                                <h1 class="name">
+                                    Blueberry Oat Waffles
+                                </h1>
+                                <p class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </p>
+                                <p class="review">
+                                    532 Customer Reviews
+                                </p>
+                                <p>
+                                    <span class="oldprice">
+                                        Old price:
+                                    </span>
+                                    <span class="oldcost">
+                                        ₹ 258
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="newprice">
+                                        Current price:
+                                    </span>
+                                    <span class="newcost">
+                                        ₹ 199
+                                    </span>
+                                </p>
+                                <a href="Oats.html">
+                                    <button class="btn btn-warning mibuton" type="button">
+                                        Details
+                                    </button>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <!--Copyright symbol-->
-                    <p id="copy">
-                        &COPY; 2022
-                    </p>
+                    <div class="mibox">
+                        <div class="row">
+                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                <img src="https://i.ibb.co/rc9Rx0k/Toast-Wraps.jpg" alt="Toast" class="img-responsive miimage"/>
+                            </div>
+                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
+                                <h1 class="name">
+                                    Fruit-filled French Toast
+                                </h1>
+                                <p class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </p>
+                                <p class="review">
+                                    541 Customer Reviews
+                                </p>
+                                <p>
+                                    <span class="oldprice">
+                                        Old price:
+                                    </span>
+                                    <span class="oldcost">
+                                        ₹ 338
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="newprice">
+                                        Current price:
+                                    </span>
+                                    <span class="newcost">
+                                        ₹ 249
+                                    </span>
+                                </p>
+                                <a href="Toast.html">
+                                    <button class="btn btn-warning mibuton" type="button">
+                                        Details
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mibox">
+                        <div class="row">
+                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                <img src="https://i.ibb.co/Bf19k83/Salad.jpg" alt="Salad" class="img-responsive miimage"/>
+                            </div>
+                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
+                                <h1 class="name">
+                                    Steak and Fries Salad
+                                </h1>
+                                <p class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </p>
+                                <p class="review">
+                                    521 Customer Reviews
+                                </p>
+                                <p>
+                                    <span class="oldprice">
+                                        Old price:
+                                    </span>
+                                    <span class="oldcost">
+                                        ₹ 462
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="newprice">
+                                        Current price:
+                                    </span>
+                                    <span class="newcost">
+                                        ₹ 399
+                                    </span>
+                                </p>
+                                <a href="Salad.html">
+                                    <button class="btn btn-warning mibuton" type="button">
+                                        Details
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mibox">
+                        <div class="row">
+                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                <img src="https://i.ibb.co/q9CYcHW/Sandwich.jpg" alt="Sandwich" class="img-responsive miimage"/>
+                            </div>
+                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
+                                <h1 class="name">
+                                    Grilled Eggplant Sandwich
+                                </h1>
+                                <p class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </p>
+                                <p class="review">
+                                    539 Customer Reviews
+                                </p>
+                                <p>
+                                    <span class="oldprice">
+                                        Old price:
+                                    </span>
+                                    <span class="oldcost">
+                                        ₹ 345
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="newprice">
+                                        Current price:
+                                    </span>
+                                    <span class="newcost">
+                                        ₹ 299
+                                    </span>
+                                </p>
+                                <a href="Sandwich.html">
+                                    <button class="btn btn-warning mibuton" type="button">
+                                        Details
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mibox">
+                        <div class="row">
+                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                <img src="https://i.ibb.co/Gv0SgdB/BBQ-Chicken.jpg" alt="Chicken" class="img-responsive miimage"/>
+                            </div>
+                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
+                                <h1 class="name">
+                                    Tropical BBQ Chicken
+                                </h1>
+                                <p class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </p>
+                                <p class="review">
+                                    530 Customer Reviews
+                                </p>
+                                <p>
+                                    <span class="oldprice">
+                                        Old price:
+                                    </span>
+                                    <span class="oldcost">
+                                        ₹ 512
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="newprice">
+                                        Current price:
+                                    </span>
+                                    <span class="newcost">
+                                        ₹ 449
+                                    </span>
+                                </p>
+                                <a href="Chicken.html">
+                                    <button class="btn btn-warning mibuton" type="button">
+                                        Details
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mibox">
+                        <div class="row">
+                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                <img src="https://i.ibb.co/LpLsgmY/Fish.jpg" alt="Fish" class="img-responsive miimage"/>
+                            </div>
+                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
+                                <h1 class="name">
+                                    Southwestern Fish Tacos
+                                </h1>
+                                <p class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </p>
+                                <p class="review">
+                                    523 Customer Reviews
+                                </p>
+                                <p>
+                                    <span class="oldprice">
+                                        Old price:
+                                    </span>
+                                    <span class="oldcost">
+                                        ₹ 278
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="newprice">
+                                        Current price:
+                                    </span>
+                                    <span class="newcost">
+                                        ₹ 235
+                                    </span>
+                                </p>
+                                <a href="Fish.html">
+                                    <button class="btn btn-warning mibuton" type="button">
+                                        Details
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mibox">
+                        <div class="row">
+                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                <img src="https://i.ibb.co/zFPfHBv/Watermelon-Drink.jpg" alt="Watermelon drink" class="img-responsive miimage"/>
+                            </div>
+                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
+                                <h1 class="name">
+                                    Watermelon Agua Fresca
+                                </h1>
+                                <p class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </p>
+                                <p class="review">
+                                    514 Customer Reviews
+                                </p>
+                                <p>
+                                    <span class="oldprice">
+                                        Old price:
+                                    </span>
+                                    <span class="oldcost">
+                                        ₹ 120
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="newprice">
+                                        Current price:
+                                    </span>
+                                    <span class="newcost">
+                                        ₹ 89
+                                    </span>
+                                </p>
+                                <a href="Watermelon.html">
+                                    <button class="btn btn-warning mibuton" type="button">
+                                        Details
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mibox">
+                        <div class="row">
+                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                <img src="https://i.ibb.co/JzM2mFm/Pomegranate-Drink.jpg" alt="Pomegranate drink" class="img-responsive miimage"/>
+                            </div>
+                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
+                                <h1 class="name">
+                                    Pomegranate Pimms
+                                </h1>
+                                <p class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </p>
+                                <p class="review">
+                                    523 Customer Reviews
+                                </p>
+                                <p>
+                                    <span class="oldprice">
+                                        Old price:
+                                    </span>
+                                    <span class="oldcost">
+                                        ₹ 115
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="newprice">
+                                        Current price:
+                                    </span>
+                                    <span class="newcost">
+                                        ₹ 68
+                                    </span>
+                                </p>
+                                <a href="Pomegranate.html">
+                                    <button class="btn btn-warning mibuton" type="button">
+                                        Details
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mibox">
+                        <div class="row">
+                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                <img src="https://i.ibb.co/3vdg3Pm/Samosa.png" alt="Samosa" class="img-responsive miimage"/>
+                            </div>
+                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
+                                <h1 class="name">
+                                    Mushroom Samosa
+                                </h1>
+                                <p class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </p>
+                                <p class="review">
+                                    541 Customer Reviews
+                                </p>
+                                <p>
+                                    <span class="oldprice">
+                                        Old price:
+                                    </span>
+                                    <span class="oldcost">
+                                        ₹ 65
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="newprice">
+                                        Current price:
+                                    </span>
+                                    <span class="newcost">
+                                        ₹ 18
+                                    </span>
+                                </p>
+                                <a href="Samosa.html">
+                                    <button class="btn btn-warning mibuton" type="button">
+                                        Details
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mibox">
+                        <div class="row">
+                            <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                <img src="https://i.ibb.co/7jNVg6V/Tikka.png" alt="Tikka" class="img-responsive miimage"/>
+                            </div>
+                            <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-7 col-7">
+                                <h1 class="name">
+                                    Paneer Tikka Kali Mirch
+                                </h1>
+                                <p class="star">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    <i class="far fa-star"></i>
+                                </p>
+                                <p class="review">
+                                    533 Customer Reviews
+                                </p>
+                                <p>
+                                    <span class="oldprice">
+                                        Old price:
+                                    </span>
+                                    <span class="oldcost">
+                                        ₹ 250
+                                    </span>
+                                </p>
+                                <p>
+                                    <span class="newprice">
+                                        Current price:
+                                    </span>
+                                    <span class="newcost">
+                                        ₹ 199
+                                    </span>
+                                </p>
+                                <a href="Tikka.html">
+                                 <button class="btn btn-warning mibuton" type="button">
+                                        Details
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <footer id="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                        <ul class="vertical">
+                            <li>
+                                Blog
+                            </li>
+                            <li>
+                                Contact Us
+                            </li>
+                            <li>
+                                About me
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                        <ul class="vertical">
+                            <li>
+                                Code of Conduct
+                            </li>
+                            <li>
+                                Community
+                            </li>
+                            <li>
+                                Mobile Apps
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                        <ul class="vertical">
+                            <li>
+                                Privacy
+                            </li>
+                            <li>
+                                Terms and Conditions
+                            </li>
+                            <li>
+                                Security
+                            </li>
+                            <li>
+                                Sitemap
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--Copyright symbol-->
+            <p id="copy">
+                &COPY; 2022
+            </p>
         </footer>
-    </body>
+    </body>   
 </html>
