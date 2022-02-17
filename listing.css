@@ -1,26 +1,29 @@
-#header{
-    height: 62px;
+.ncolour{
+    background-color: rgb(221, 148, 13);
 }
 
 #icon{
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     background-color: orange;
 }
 
 .navv{
     font-size: 40px;
-    margin-left: 8%;
+    margin-left: 10%;
     font-weight: bold;
     color: #bf2c33 !important;
+    text-decoration: none;
 }
 
 .navvv{
     font-size: 25px;
-    color: orange !important;
-    border-left-color: orange;
+    color: black !important;
+    font-weight: bold;
+    border-left-color: black;
     border-left-style: solid;
     border-left-width: 3px;
+    text-decoration: none;
 }
 
 #filter{
@@ -31,7 +34,7 @@
     border-style: double;
     border-color: olive;
     box-shadow: -50px -50px 50px olive;
-    animation: magnify 1.5s;
+    animation: magnify 1s;
 }
 
 @keyframes magnify {
@@ -70,10 +73,10 @@
     border-color: olive;
     border-width: 5px;
     margin-top: 8%;
-    margin-left: 5%;
+    margin-left: 2%;
     margin-bottom: 5%;
     box-shadow: 65px -40px 50px olive;
-    animation: swing 1.5s;
+    animation: swing 1s;
 }
 
 @keyframes swing {
@@ -85,11 +88,12 @@
 
 .miimage{
     height: 290px;
+    width: 100%;
 }
 
 .name{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 2%;
 }
 
@@ -112,6 +116,7 @@
 .oldcost{
     text-decoration: line-through;
     font-size: 22px;
+    margin-left: 16%;
 }
 
 .newprice{
@@ -120,6 +125,7 @@
 
 .newcost{
     font-size: 22px;
+    margin-left: 5%;
 }
 
 .mibuton{
@@ -130,8 +136,8 @@
 }
 
 #footer{
-    color: orange;
-    background-color: black;
+    color: black;
+    background-color: rgb(221, 148, 13);
 }
 
 .vertical{
@@ -142,8 +148,9 @@
 }
 
 #copy{
-    width: 100%;
-    text-align: center;
-    font-family: Gill Sans;
     font-size: 25px;
+    text-align: center;
+    border-top-style: solid;
+    border-top-color: black;
+    border-top-width: 2px;
 }
