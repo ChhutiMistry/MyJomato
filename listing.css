@@ -86,14 +86,22 @@
     100% {transform: scale(1.5)}
 }
 
+.mibox:hover{
+    transform: scale(1.1);
+    border-color: rgb(221, 221, 13);
+    box-shadow: 65px -40px 50px rgb(221, 221, 13);
+
+}
+
 .miimage{
     height: 290px;
     width: 100%;
 }
 
 .name{
+    font-family: Gill Sans;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 28px;
     margin-top: 2%;
 }
 
@@ -111,21 +119,25 @@
 
 .oldprice{
     font-size: 20px;
+    font-weight: bold;
 }
 
 .oldcost{
     text-decoration: line-through;
     font-size: 22px;
     margin-left: 16%;
+    font-weight: bolder;
 }
 
 .newprice{
     font-size: 20px;
+    font-weight: bold;
 }
 
 .newcost{
     font-size: 22px;
     margin-left: 5%;
+    font-weight: bolder;
 }
 
 .mibuton{

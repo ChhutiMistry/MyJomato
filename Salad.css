@@ -57,22 +57,26 @@
 #oldprice{
     font-size: 22px;
     margin-left: 10%;
+    font-weight: bold;
 }
 
 #oldcost{
     font-size: 24px;
     text-decoration: line-through;
     margin-left: 10%;
+    font-weight: bolder;
 }
 
 #newprice{
     font-size: 22px;
     margin-left: 10%;
+    font-weight: bold;
 }
 
 #newcost{
     font-size: 24px;
     margin-left: 5%;
+    font-weight: bolder;
 }
 
 #termlogo1{
