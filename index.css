@@ -192,3 +192,72 @@
     background-color: #231f1f;
     color: white;
 }
+
+/*Coupon*/
+
+#coupon{
+    height: 300px;
+    width: 800px;
+    z-index: 1;
+    background-color: rgba(124, 121, 121, 0.8);
+    margin-top: 4%;
+    position: fixed;
+}
+
+.closecoupon{
+    float: right;
+    font-size: 30px;
+    width: 50px;
+    box-shadow: 15px -8px 10px rgb(54, 53, 53);
+}
+
+#imageco{
+    height: 300px;
+    width: 400px;
+    float: right;
+}
+
+#contco{
+    background-color: rgba(249, 252, 255, 0.6);
+    height: 300px;
+    width: 350px;
+}
+
+#headco{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-left: 2%;
+    position: absolute;
+    color: #413a3a;
+}
+
+#promoco{
+    font-size: 33px;
+    font-weight: bold;
+    margin-top: 13%;
+    margin-left: 4%;
+    position: absolute;
+    color: rgb(65, 59, 29);
+}
+
+#codeco{
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 21%;
+    margin-left: 10%;
+    position: absolute;
+    color: #702a11;
+    border-style: dashed;
+    border-color: rgb(155, 48, 48);
+    border-width: 2px;
+}
+
+#expireco{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 33%;
+    margin-left: 20%;
+    position: absolute;
+    color: red;
+}
