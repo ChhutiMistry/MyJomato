@@ -124,8 +124,11 @@
 }
 
 #list{
-    color: black;
     text-decoration: none;
+}
+
+a{
+    color: black;
 }
 
 .box{
@@ -193,14 +196,19 @@
     color: white;
 }
 
+.mycatt{
+    color: white;
+}
+
 /*Coupon*/
 
 #coupon{
     height: 300px;
     width: 800px;
-    z-index: 1;
+    z-index: 100;
     background-color: rgba(124, 121, 121, 0.8);
     margin-top: 4%;
+    margin-left: 5%;
     position: fixed;
 }
 
@@ -214,42 +222,44 @@
 #imageco{
     height: 300px;
     width: 400px;
-    float: right;
 }
 
 #contco{
-    background-color: rgba(249, 252, 255, 0.6);
+    /* background-color: rgba(249, 252, 255, 0.6); */
     height: 300px;
     width: 350px;
+    float: right;
 }
 
 #headco{
-    font-size: 30px;
+    font-size: 33px;
     font-weight: bold;
     margin-top: 1%;
     margin-left: 2%;
     position: absolute;
-    color: #413a3a;
+    color: #2c0711;
 }
 
 #promoco{
     font-size: 33px;
     font-weight: bold;
-    margin-top: 13%;
+    margin-top: 10%;
     margin-left: 4%;
     position: absolute;
-    color: rgb(65, 59, 29);
+    color: #faaa10;
 }
 
 #codeco{
     font-size: 40px;
     font-weight: bold;
-    margin-top: 21%;
+    margin-top: 20%;
     margin-left: 10%;
     position: absolute;
-    color: #702a11;
+    color: #fbebb8;
+    padding-left: 25px;
+    padding-right: 25px;
     border-style: dashed;
-    border-color: rgb(155, 48, 48);
+    border-color: #78f9ed;
     border-width: 2px;
 }
 
@@ -257,7 +267,7 @@
     font-size: 20px;
     font-weight: bold;
     margin-top: 33%;
-    margin-left: 20%;
+    margin-left: 26%;
     position: absolute;
-    color: red;
+    color: #780505;
 }

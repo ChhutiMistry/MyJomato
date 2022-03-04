@@ -1,6 +1,8 @@
 function changemode(){
     var mybody = document.body;
-    mybody.classList.toggle(`mydark`)
+    var mycat = document.getElementById(`list`);
+    mybody.classList.toggle(`mydark`);
+    mycat.classList.toggle(`mycatt`);
 }
 
 function loadcoupon(){
@@ -8,5 +10,5 @@ function loadcoupon(){
 }
 
 function closecoupon(){
-    document.getElementById('coupon').style.display = 'none'
+    document.getElementById('coupon').style.display = 'none';
 }
