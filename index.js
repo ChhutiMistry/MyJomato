@@ -1,8 +1,20 @@
 function changemode(){
     var mybody = document.body;
     var mycat = document.getElementById(`list`);
+    var mycatt = document.getElementById(`listt`);
+    var mmycat = document.getElementById(`llist`);
+    var myycat = document.getElementById(`liist`);
+    var myccat = document.getElementById(`lisst`);
+    var mycaat = document.getElementById(`llistt`);
+    var mmycatt = document.getElementById(`lliisstt`);
     mybody.classList.toggle(`mydark`);
     mycat.classList.toggle(`mycatt`);
+    mycatt.classList.toggle(`mycatt`);
+    mmycat.classList.toggle(`mycatt`);
+    myycat.classList.toggle(`mycatt`);
+    myccat.classList.toggle(`mycatt`);
+    mycaat.classList.toggle(`mycatt`);
+    mmycatt.classList.toggle(`mycatt`);
 }
 
 function loadcoupon(){
@@ -13,30 +25,26 @@ function closecoupon(){
     document.getElementById('coupon').style.display = 'none';
 }
 
-let Geolocation = () => {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-        console.log("Your Location is not supported.")
+geolocation();
+function geolocation(){
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(showPosition)
+    }else{
+        x.innerText = "Your Location is not Supported"
     }
 }
-
-let showPosition=(data) => {
-    let x = document.getElementById('myweather');
-    let lon = data.coords.longitude;
-    let lat = data.coords.latitude;
-    console.log(data);
-    let url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${lat}&lon=${lon}&mode=json&units=metric&cnt=1&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
-   
-    fetch(url)
+function showPosition(data){
+    console.log(data)
+    let latitude = data.coords.latitude;
+    let longitude = data.coords.longitude
+    const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&mode=json&units=metric&cnt=1&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
+    fetch(url,{method: 'GET'})
     .then((res) => res.json())
     .then((data) => {
-        let cityName = data.city.name
-        console.log(data);
-        data.list.map((item) => {
-            console.log(item.temp.day)
-            x.innerText = `Average temperature of ${cityName} is ${item.temp.day} degree Celsius`;
-        })
+        let cityname = data.city.name
+        let temperature = `${data.list[0].temp.day} degree Celsius`
+        var x = document.getElementById("myweather");
+        console.log(data)
+        x.innerText = `Average temperature of ${cityname} is ${temperature}`
     })
 }
-Geolocation();
