@@ -7,6 +7,9 @@ function changemode(){
     var myccat = document.getElementById(`lisst`);
     var mycaat = document.getElementById(`llistt`);
     var mmycatt = document.getElementById(`lliisstt`);
+    var myweather = document.getElementById(`mycweather`);
+    var myheader = document.getElementById(`nncolour`);
+    var myfooter = document.getElementById(`myfoot`);
     mybody.classList.toggle(`mydark`);
     mycat.classList.toggle(`mycatt`);
     mycatt.classList.toggle(`mycatt`);
@@ -15,6 +18,9 @@ function changemode(){
     myccat.classList.toggle(`mycatt`);
     mycaat.classList.toggle(`mycatt`);
     mmycatt.classList.toggle(`mycatt`);
+    myweather.classList.toggle(`mywea`);
+    myheader.classList.toggle(`nncolour`);
+    myfooter.classList.toggle(`nncolour`);
 }
 
 function loadcoupon(){
