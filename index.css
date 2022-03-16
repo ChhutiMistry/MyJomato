@@ -14,18 +14,21 @@
     font-size: 40px;
     margin-left: 10%;
     font-weight: bold;
-    color: #bf2c33 !important;
+    color: #dd252a !important;
     text-decoration: none;
 }
 
 .navvv{
     font-size: 25px;
-    color: black !important;
     font-weight: bold;
     border-left-color: black;
     border-left-style: solid;
     border-left-width: 3px;
     text-decoration: none;
+}
+
+.nav-item > .nav-link {
+    color: black;
 }
 
 /*Front Display*/
@@ -213,6 +216,11 @@ a:hover{
 
 .nncolour{
     color: #f4fcce;
+    background-color: #654e23;
+}
+
+.ncolor{
+    color: #e4f2a0 !important;
     background-color: #654e23;
 }
 

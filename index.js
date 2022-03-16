@@ -9,6 +9,10 @@ function changemode(){
     var mmycatt = document.getElementById(`lliisstt`);
     var myweather = document.getElementById(`mycweather`);
     var myheader = document.getElementById(`nncolour`);
+    var myheade = document.getElementById(`heade`);
+    var myheadee = document.getElementById(`headee`);
+    var myhheade = document.getElementById(`hheade`);
+    var myhheadee = document.getElementById(`hheadee`);
     var myfooter = document.getElementById(`myfoot`);
     mybody.classList.toggle(`mydark`);
     mycat.classList.toggle(`mycatt`);
@@ -20,6 +24,10 @@ function changemode(){
     mmycatt.classList.toggle(`mycatt`);
     myweather.classList.toggle(`mywea`);
     myheader.classList.toggle(`nncolour`);
+    myheade.classList.toggle(`ncolor`);
+    myheadee.classList.toggle(`ncolor`);
+    myhheade.classList.toggle(`ncolor`);
+    myhheadee.classList.toggle(`ncolor`);
     myfooter.classList.toggle(`nncolour`);
 }
 
