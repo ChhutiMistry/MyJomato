@@ -34,14 +34,14 @@
     border-style: double;
     border-color: olive;
     box-shadow: -50px -50px 50px olive;
-    animation: magnify 1s;
+    animation: magnify 0.8s;
 }
 
 @keyframes magnify {
-    0% {transform: rotate(-10deg)}
+    0% {transform: rotate(-5deg)}
     25% {transform: rotate(0deg)}
-    75% {transform: rotate(10deg)}
-    100% {transform: scale(1.5)}
+    75% {transform: rotate(5deg)}
+    100% {transform: scale(1.2)}
 }
 
 #filtername{
@@ -76,18 +76,18 @@
     margin-left: 2%;
     margin-bottom: 5%;
     box-shadow: 65px -40px 50px olive;
-    animation: swing 1s;
+    animation: swing 0.8s;
 }
 
 @keyframes swing {
-    0% {transform: rotate(10deg)}
+    0% {transform: rotate(5deg)}
     25% {transform: rotate(0deg)}
-    75% {transform: rotate(-10deg)}
-    100% {transform: scale(1.5)}
+    75% {transform: rotate(-5deg)}
+    100% {transform: scale(1.2)}
 }
 
 .mibox:hover{
-    transform: scale(1.1);
+    transform: scale(1.02);
     border-color: rgb(221, 221, 13);
     box-shadow: 65px -40px 50px rgb(221, 221, 13);
 

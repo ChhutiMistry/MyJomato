@@ -62,3 +62,38 @@ function showPosition(data){
         x.innerText = `Average temperature of ${cityname} is ${temperature}`
     })
 }
+
+const cityUrl = "https://jomato-dataset-live.herokuapp.com/location";
+const restaurantUrl = "https://jomato-dataset-live.herokuapp.com/restaurants?state_id="
+function getCity(){
+    fetch(cityUrl)
+    .then((res) => res.json())
+    .then((data) => {
+        data.map((item) => {
+            let element = document.createElement('option')
+            let text = document.createTextNode(item.state)
+            element.appendChild(text)
+            element.value = item.state_id;
+            document.getElementById('city').appendChild(element)
+        })
+    })
+}
+const getRestaurant = () => {
+    const cityId = document.getElementById('city').value;
+    const rest = document.getElementById('restaurant')
+
+    while(rest.length > 0){
+        rest.remove(0)
+    }
+
+    fetch(`${restaurantUrl}${cityId}`)
+    .then((res) => res.json())
+    .then((data) => {
+        data.map((item) => {
+            let element = document.createElement('option')
+            let text = document.createTextNode(`${item.restaurant_name} | ${item.address}`)
+            element.appendChild(text)
+            document.getElementById('restaurant').appendChild(element)
+        })
+    })
+}

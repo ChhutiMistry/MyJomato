@@ -96,24 +96,14 @@
     font-weight: bold;
 }
 
-.dropp{
-    background-color: #e0ac4b;
-}
-
-.droptextt{
-    font-size: 20px;
-    font-family: sans-serif;
-    text-decoration: none;
-    color: black;
-    margin-left: 5%;
-}
-
 #dropcity{
     display: inline;
+    font-size: 20px;
 }
 
 #droprest{
     display: inline;
+    font-size: 20px;
 }
 
 /*Catalogue*/

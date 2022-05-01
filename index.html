@@ -97,45 +97,25 @@
             <div id="drop">
                 <!--Dropdown Box for City-->
                 <div class="dropdown" id="dropcity">
-                    <button class="btn-warning dropdown-toggle droph" type="button" data-bs-toggle="dropdown">
-                        SELECT CITY
-                    </button>
-                    <ul class="dropdown-menu dropp">
-                        <li>
-                            <a class="droptextt" href="#">Delhi</a>
-                        </li>
-                        <li>
-                            <a class="droptextt" href="#">Mumbai</a>
-                        </li>
-                        <li>
-                            <a class="droptextt" href="#">Kolkata</a>
-                        </li>
-                        <li>
-                            <a class="droptextt" href="#">Chennai</a>
-                        </li>
-                    </ul>
+                    <select class="btn-warning dropdown-toggle droph" type="button" data-bs-toggle="dropdown"
+                    id="city" onchange="getRestaurant()">
+                        <option>
+                            SELECT CITY
+                        </option>
+                    </select>
                 </div>
                 <!--Dropdown Box for Restaurant-->
                 <div class="dropdown" id="droprest">
-                    <button class="btn-warning dropdown-toggle droph" type="button" data-bs-toggle="dropdown">
-                        SELECT RESTAURANT
-                    </button>
-                    <ul class="dropdown-menu dropp">
-                        <li>
-                            <a class="droptextt" href="#">Kyma</a>
-                        </li>
-                        <li>
-                            <a class="droptextt" href="#">Saltt</a>
-                        </li>
-                        <li>
-                            <a class="droptextt" href="#">Bo tai Qutub</a>
-                        </li>
-                        <li>
-                            <a class="droptextt" href="#">Capital Kitchen</a>
-                        </li>
-                    </ul>
+                    <select class="btn-warning dropdown-toggle droph" type="button" data-bs-toggle="dropdown" id="restaurant">
+                        <option>
+                            SELECT RESTAURANT
+                        </option>
+                    </select>
                 </div>
             </div>
+            <script>
+                window.onload = getCity()
+            </script>
         </div>
         <div class="container-fluid">
             <div id="catalogue">
